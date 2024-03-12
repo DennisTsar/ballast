@@ -302,7 +302,6 @@ public fun Modifier.highlight(enabled: Boolean = true): Modifier {
     return this.then(next)
 }
 
-@Suppress("UNUSED_PARAMETER")
 @Composable
 public fun IntellijEditor(
     text: String,

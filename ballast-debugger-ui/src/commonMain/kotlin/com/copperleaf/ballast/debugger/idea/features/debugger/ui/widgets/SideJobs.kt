@@ -145,7 +145,6 @@ internal fun ColumnScope.SideJobDetails(
     }
 }
 
-@Suppress("UNUSED_PARAMETER")
 @Composable
 internal fun SideJobSummary(
     sideJobState: BallastSideJobState,

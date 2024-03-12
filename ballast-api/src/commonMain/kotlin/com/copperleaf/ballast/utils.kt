@@ -73,7 +73,6 @@ public suspend inline fun <
  * The side-job launched here uses the `.toString()` value of [input] as the key, to avoid accidentally cancelling
  * any already-running side-jobs.
  */
-@Suppress("NOTHING_TO_INLINE")
 public suspend inline fun <Inputs : Any, Events : Any, State : Any> InputHandlerScope<Inputs, Events, State>.postInput(
     input: Inputs
 ) {

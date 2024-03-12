@@ -1,7 +1,6 @@
 package com.copperleaf.ballast.examples
 
 import androidx.compose.animation.AnimatedContent
-import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -48,7 +47,7 @@ import org.jetbrains.compose.splitpane.ExperimentalSplitPaneApi
 import org.jetbrains.compose.splitpane.HorizontalSplitPane
 import org.jetbrains.compose.splitpane.rememberSplitPaneState
 
-@OptIn(ExperimentalAnimationApi::class, ExperimentalSplitPaneApi::class)
+@OptIn(ExperimentalSplitPaneApi::class)
 fun main() = singleWindowApplication(title = "Ballast Examples") {
     val applicationScope = rememberCoroutineScope()
     val injector: ComposeDesktopInjector = remember(applicationScope) { ComposeDesktopInjectorImpl(applicationScope) }

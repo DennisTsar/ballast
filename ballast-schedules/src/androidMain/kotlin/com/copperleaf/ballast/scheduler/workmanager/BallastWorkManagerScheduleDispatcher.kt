@@ -21,7 +21,6 @@ import kotlinx.coroutines.coroutineScope
  * The newly scheduled jobs are instances of [BallastWorkManagerScheduleWorker] which run the current execution, and
  * then schedule the next execution.
  */
-@Suppress("UNCHECKED_CAST")
 @RequiresApi(Build.VERSION_CODES.O)
 public class BallastWorkManagerScheduleDispatcher(
     context: Context,

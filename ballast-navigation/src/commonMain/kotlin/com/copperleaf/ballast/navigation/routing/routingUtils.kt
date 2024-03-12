@@ -1,5 +1,3 @@
-@file:Suppress("NOTHING_TO_INLINE")
-
 package com.copperleaf.ballast.navigation.routing
 
 import com.copperleaf.ballast.navigation.internal.EnumRoutingTable

@@ -12,7 +12,6 @@ import kotlinx.coroutines.CoroutineDispatcher
 public fun <Inputs : Any, Events : Any, State : Any> BallastViewModelConfiguration.TypedBuilder<Inputs, Events, State>.build(
 ): BallastViewModelConfiguration<Inputs, Events, State> {
     val vmName = name ?: "$inputHandler-vm"
-    @Suppress("DEPRECATION")
     return DefaultViewModelConfiguration<Inputs, Events, State>(
         initialState = initialState.requireTyped("initialState"),
         inputHandler = inputHandler.requireTyped("inputHandler"),

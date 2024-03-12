@@ -12,7 +12,6 @@ import kotlinx.coroutines.CoroutineDispatcher
 public fun <Inputs : Any, Events : Any, State : Any> BallastViewModelConfiguration.Builder.build(
 ): BallastViewModelConfiguration<Inputs, Events, State> {
     val vmName = name ?: "$inputHandler-vm"
-    @Suppress("DEPRECATION")
     return DefaultViewModelConfiguration<Inputs, Events, State>(
         initialState = initialState.requireTyped("initialState"),
         inputHandler = inputHandler.requireTyped("inputHandler"),
@@ -148,13 +147,13 @@ internal fun <T : Any> Any?.requireTypedIfPresent(name: String): T? {
     return this as T
 }
 
-@Suppress("UNCHECKED_CAST", "UNUSED_PARAMETER")
+@Suppress("UNCHECKED_CAST")
 internal fun <Inputs : Any, Events : Any, State : Any> InputStrategy<*, *, *>?.requireTypedInputStrategyIfPresent(): InputStrategy<Inputs, Events, State>? {
     if (this == null) return null
     return this as InputStrategy<Inputs, Events, State>
 }
 
-@Suppress("UNCHECKED_CAST", "UNUSED_PARAMETER")
+@Suppress("UNCHECKED_CAST")
 internal fun <Inputs : Any, Events : Any, State : Any> EventStrategy<*, *, *>?.requireTypedEventStrategyIfPresent(): EventStrategy<Inputs, Events, State>? {
     if (this == null) return null
     return this as EventStrategy<Inputs, Events, State>

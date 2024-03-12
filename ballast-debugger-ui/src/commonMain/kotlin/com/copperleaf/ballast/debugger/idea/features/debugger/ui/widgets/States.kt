@@ -181,7 +181,6 @@ internal fun ColumnScope.StateDetails(
     }
 }
 
-@Suppress("UNUSED_PARAMETER")
 @Composable
 internal fun StateSnapshotSummary(
     stateSnapshot: BallastStateSnapshot,

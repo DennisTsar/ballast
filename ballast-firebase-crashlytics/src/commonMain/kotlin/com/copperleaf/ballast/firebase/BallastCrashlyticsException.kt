@@ -1,5 +1,3 @@
-@file:Suppress("DEPRECATION")
-
 package com.copperleaf.ballast.firebase
 
 /**
@@ -10,7 +8,6 @@ public class BallastCrashlyticsException(
     public val handled: Boolean,
 ) : RuntimeException(_cause) {
 
-    @Suppress("DEPRECATION")
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other !is BallastCrashlyticsException) return false

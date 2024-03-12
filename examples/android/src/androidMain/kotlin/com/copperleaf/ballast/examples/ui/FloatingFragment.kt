@@ -9,7 +9,7 @@ import com.copperleaf.ballast.examples.MainApplication
 import com.copperleaf.android.R
 import com.copperleaf.ballast.navigation.routing.RouterContract
 
-@Suppress("UNUSED_PARAMETER", "UNCHECKED_CAST", "DEPRECATION")
+@Suppress("UNCHECKED_CAST", "DEPRECATION")
 class FloatingFragment : DialogFragment(R.layout.dialog_fragment_content) {
 
     private val router by lazy { MainApplication.getInstance().injector.router() }

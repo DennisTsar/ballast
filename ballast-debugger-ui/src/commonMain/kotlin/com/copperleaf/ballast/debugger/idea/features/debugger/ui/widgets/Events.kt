@@ -145,7 +145,6 @@ internal fun ColumnScope.EventDetails(
     }
 }
 
-@Suppress("UNUSED_PARAMETER")
 @Composable
 internal fun EventSummary(
     eventState: BallastEventState,

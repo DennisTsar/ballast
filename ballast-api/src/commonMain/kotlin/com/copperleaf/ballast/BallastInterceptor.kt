@@ -1,12 +1,9 @@
-@file:Suppress("DEPRECATION")
-
 package com.copperleaf.ballast
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharedFlow
-import kotlinx.coroutines.launch
 
 /**
  * The entry-point for attaching additional functionality to a ViewModel. As Inputs or other features get processed

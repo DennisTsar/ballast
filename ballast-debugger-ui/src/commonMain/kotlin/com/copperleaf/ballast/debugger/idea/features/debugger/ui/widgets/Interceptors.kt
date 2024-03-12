@@ -83,7 +83,6 @@ internal fun ColumnScope.InterceptorDetails(
 ) {
 }
 
-@Suppress("UNUSED_PARAMETER")
 @Composable
 internal fun InterceptorSummary(
     interceptorState: BallastInterceptorState,

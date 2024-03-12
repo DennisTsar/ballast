@@ -6,7 +6,6 @@ import com.copperleaf.ballast.debugger.idea.features.debugger.vm.DebuggerUiContr
 import com.intellij.openapi.ide.CopyPasteManager
 import java.awt.datatransfer.StringSelection
 
-@Suppress("UNUSED_EXPRESSION")
 class DebuggerUiEventHandler() : EventHandler<
         DebuggerUiContract.Inputs,
         DebuggerUiContract.Events,

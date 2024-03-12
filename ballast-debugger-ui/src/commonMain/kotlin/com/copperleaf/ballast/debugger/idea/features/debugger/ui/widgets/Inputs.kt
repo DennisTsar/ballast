@@ -212,7 +212,6 @@ internal fun ColumnScope.InputDetails(
     }
 }
 
-@Suppress("UNUSED_PARAMETER")
 @Composable
 internal fun InputSummary(
     inputState: BallastInputState,

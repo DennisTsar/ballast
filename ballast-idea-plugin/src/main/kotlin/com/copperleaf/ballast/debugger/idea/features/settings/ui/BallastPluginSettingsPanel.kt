@@ -10,7 +10,6 @@ import javax.swing.JComponent
 /**
  * See https://plugins.jetbrains.com/docs/intellij/settings-guide.html#the-configurable-interface
  */
-@Suppress("UnstableApiUsage")
 class BallastPluginSettingsPanel(
     private val project: Project
 ) : Configurable, Configurable.NoScroll {
