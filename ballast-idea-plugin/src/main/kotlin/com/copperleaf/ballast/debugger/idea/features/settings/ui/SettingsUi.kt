@@ -163,7 +163,7 @@ object SettingsUi {
                 title = { Text("Templates") }
             ) {
                 RadioGroup(
-                    items = BallastViewModel.ViewModelTemplate.values().toList(),
+                    items = BallastViewModel.ViewModelTemplate.entries,
                     value = uiState.modifiedSettings.baseViewModelType,
                     onValueChange = {
                         postInput(
@@ -175,7 +175,7 @@ object SettingsUi {
                 )
 
                 RadioGroup(
-                    items = BallastViewModel.DefaultVisibility.values().toList(),
+                    items = BallastViewModel.DefaultVisibility.entries,
                     value = uiState.modifiedSettings.defaultVisibility,
                     onValueChange = {
                         postInput(

@@ -102,7 +102,7 @@ object BggUi {
                                 expanded = dropdownExpanded,
                                 onDismissRequest = { dropdownExpanded = false }
                             ) {
-                                HotListType.values().forEach { strategy ->
+                                HotListType.entries.forEach { strategy ->
                                     DropdownMenuItem(
                                         onClick = {
                                             dropdownExpanded = false

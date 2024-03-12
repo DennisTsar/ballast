@@ -45,7 +45,7 @@ object BggWebUi {
 
         BulmaSelect(
             fieldName = "HotList Type",
-            items = HotListType.values().toList(),
+            items = HotListType.entries,
             itemValue = { it.name },
             selectedValue = uiState.bggHotListType,
             onValueChange = { postInput(BggContract.Inputs.ChangeHotListType(it)) },

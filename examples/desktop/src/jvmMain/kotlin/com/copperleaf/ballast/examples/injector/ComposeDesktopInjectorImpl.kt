@@ -104,12 +104,12 @@ class ComposeDesktopInjectorImpl(
         BallastExamplesRouter(
             viewModelCoroutineScope = applicationScope,
             config = commonBuilder()
-                .withRouter(RoutingTable.fromEnum(BallastExamples.values()), null)
+                .withRouter(RoutingTable.fromEnum(BallastExamples.entries), null)
                 .apply {
                     this += BallastUndoInterceptor(routerUndoController)
                     this += BallastSavedStateInterceptor(
                         RouterSavedStateAdapter(
-                            routingTable = RoutingTable.fromEnum(BallastExamples.values()),
+                            routingTable = RoutingTable.fromEnum(BallastExamples.entries),
                             initialRoute = BallastExamples.Counter,
                             prefs = preferences,
                             preserveDiscreteStates = true,

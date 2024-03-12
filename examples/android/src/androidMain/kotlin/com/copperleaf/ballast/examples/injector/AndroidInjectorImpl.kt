@@ -84,7 +84,7 @@ class AndroidInjectorImpl(
     private val router by lazy {
         BallastExamplesRouter(
             config = commonBuilder()
-                .withRouter(RoutingTable.fromEnum(BallastExamples.values()), BallastExamples.Home)
+                .withRouter(RoutingTable.fromEnum(BallastExamples.entries), BallastExamples.Home)
                 .build(),
             coroutineScope = newViewModelScope(),
         )

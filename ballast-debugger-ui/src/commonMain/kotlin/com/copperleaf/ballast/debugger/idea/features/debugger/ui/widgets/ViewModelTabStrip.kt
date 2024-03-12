@@ -30,7 +30,7 @@ internal fun Destination.Match<DebuggerRoute>.ViewModelTabStrip(
     ScrollableTabRow(
         selectedTabIndex = selectedTab?.ordinal ?: 0,
     ) {
-        ViewModelContentTab.values().forEach { tab ->
+        ViewModelContentTab.entries.forEach { tab ->
             Tab(
                 selected = tab == selectedTab,
                 onClick = { postInput(tab.navigate(connection, viewModel)) },

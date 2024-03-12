@@ -204,7 +204,7 @@ enum class AppScreens(
 
     companion object {
         fun handleDeepLink(deepLinkUrl: String) {
-            val routingTable = RoutingTable.fromEnum(AppScreens.values())
+            val routingTable = RoutingTable.fromEnum(AppScreens.entries)
 
             val destination: Destination<AppScreens> = routingTable.findMatch(
                 UnmatchedDestination.parse(deepLinkUrl),

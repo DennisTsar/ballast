@@ -55,7 +55,7 @@ class BggFragment : Fragment() {
         }
 
         binding!!.etHotlistType.setAdapter(
-            ArrayAdapter(requireContext(), R.layout.dropdown_item, HotListType.values())
+            ArrayAdapter(requireContext(), R.layout.dropdown_item, HotListType.entries)
         )
     }
 
@@ -75,7 +75,7 @@ class BggFragment : Fragment() {
         etHotlistType.setOnItemClickListener { parent, view, position, id ->
             postInput(
                 BggContract.Inputs.ChangeHotListType(
-                    HotListType.values()[position]
+                    HotListType.entries[position]
                 )
             )
         }

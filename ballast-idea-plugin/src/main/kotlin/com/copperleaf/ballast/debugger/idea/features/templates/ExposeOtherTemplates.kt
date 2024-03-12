@@ -27,11 +27,11 @@ class ExposeOtherTemplates : FileTemplateGroupDescriptorFactory {
             addTemplate(FileTemplateDescriptor(BallastUi.UiTemplate.EventHandler.templateName, BallastUi.UiTemplate.EventHandler.icon))
             addTemplate(FileTemplateDescriptor(BallastUi.UiTemplate.SavedStateAdapter.templateName, BallastUi.UiTemplate.SavedStateAdapter.icon))
 
-            BallastRepository.RepositoryTemplate.values().forEach {
+            BallastRepository.RepositoryTemplate.entries.forEach {
                 addTemplate(FileTemplateDescriptor(it.templateName, it.icon))
             }
 
-            BallastViewModel.ViewModelTemplate.values().forEach {
+            BallastViewModel.ViewModelTemplate.entries.forEach {
                 addTemplate(FileTemplateDescriptor(it.templateName, it.icon))
             }
         }

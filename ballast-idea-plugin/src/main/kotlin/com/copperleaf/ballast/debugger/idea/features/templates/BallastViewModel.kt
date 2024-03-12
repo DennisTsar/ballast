@@ -28,7 +28,7 @@ class BallastViewModel : BaseTemplateCreator<BallastViewModel.ViewModelTemplate>
 
     override fun parseTemplateName(project: Project, templateName: String): List<ViewModelTemplate> {
         return ViewModelTemplate
-            .values()
+            .entries
             .firstOrNull { templateName == it.templateName }
             ?.let { listOf(it) }
             ?: error("Unknown template type")

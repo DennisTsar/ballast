@@ -77,12 +77,12 @@ class ComposeWebInjectorImpl(
             viewModelCoroutineScope = applicationScope,
             config = if (useBrowserHashes) {
                 commonBuilder()
-                    .withRouter(RoutingTable.fromEnum(BallastExamples.values()), null)
+                    .withRouter(RoutingTable.fromEnum(BallastExamples.entries), null)
                     .apply { interceptors += BrowserHashNavigationInterceptor(initialRoute) }
                     .build()
             } else {
                 commonBuilder()
-                    .withRouter(RoutingTable.fromEnum(BallastExamples.values()), initialRoute)
+                    .withRouter(RoutingTable.fromEnum(BallastExamples.entries), initialRoute)
                     .apply {
                         if (useBrowserHashes) {
                             interceptors += BrowserHashNavigationInterceptor<BallastExamples>(initialRoute)

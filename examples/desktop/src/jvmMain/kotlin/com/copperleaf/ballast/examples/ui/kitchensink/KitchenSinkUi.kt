@@ -101,7 +101,7 @@ object KitchenSinkUi {
                                 expanded = dropdownExpanded,
                                 onDismissRequest = { dropdownExpanded = false }
                             ) {
-                                InputStrategySelection.values().forEach { strategy ->
+                                InputStrategySelection.entries.forEach { strategy ->
                                     DropdownMenuItem(
                                         onClick = {
                                             dropdownExpanded = false

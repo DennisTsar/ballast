@@ -36,7 +36,7 @@ object KitchenSinkWebUi {
     ) {
         BulmaSelect(
             fieldName = "Input Strategy",
-            items = InputStrategySelection.values().toList(),
+            items = InputStrategySelection.entries,
             itemValue = { it.name },
             selectedValue = uiState.inputStrategy,
             onValueChange = { postInput(KitchenSinkContract.Inputs.ChangeInputStrategy(it)) },

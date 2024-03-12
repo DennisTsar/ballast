@@ -31,7 +31,7 @@ class BallastRepository : BaseTemplateCreator<BallastRepository.RepositoryTempla
 
     override fun parseTemplateName(project: Project, templateName: String): List<RepositoryTemplate> {
         return RepositoryTemplate
-            .values()
+            .entries
             .firstOrNull { templateName == it.templateName }
             ?.let { listOf(it) }
             ?: when (templateName) {

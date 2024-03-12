@@ -32,7 +32,7 @@ class DebuggerToolWindowInjectorImpl(
         config = pluginInjector
             .commonViewModelBuilder(loggingEnabled = false)
             .withRouter(
-                routingTable = RoutingTable.fromEnum(DebuggerRoute.values()),
+                routingTable = RoutingTable.fromEnum(DebuggerRoute.entries),
                 initialRoute = DebuggerRoute.Home,
             )
             .build(),
