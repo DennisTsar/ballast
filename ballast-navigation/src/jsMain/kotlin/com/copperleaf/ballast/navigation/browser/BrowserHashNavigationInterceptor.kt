@@ -41,8 +41,8 @@ public class BrowserHashNavigationInterceptor<T : Route>(
     override fun watchForUrlChanges(): Flow<Uri> {
         return callbackFlow<Uri> {
             window.onhashchange = { event: HashChangeEvent ->
-                val partAfterHash = event.newURL?.split("#")?.last()
-                if (!partAfterHash.isNullOrBlank()) {
+                val partAfterHash = event.newURL.split("#").last()
+                if (partAfterHash.isNotBlank()) {
                     this@callbackFlow.trySend(Uri.parse(partAfterHash))
                 }
                 Unit
