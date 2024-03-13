@@ -5,7 +5,7 @@ import com.copperleaf.ballast.BallastNotification
 import kotlinx.coroutines.flow.Flow
 
 /**
- * A generic connection to the syncrhonization service. It is entirely up to the implementation to define how to handle
+ * A generic connection to the synchronization service. It is entirely up to the implementation to define how to handle
  * synchronization.
  *
  * For out-of-the-box usage, consider using [DefaultSyncConnection] with [InMemorySyncAdapter] to synchronize ViewModels

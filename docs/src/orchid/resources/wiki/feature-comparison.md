@@ -89,7 +89,7 @@ Whether this library is available for Kotlin Multiplatform, or is limited to a s
 {% alert 'info' :: compileAs('md') %}
 **Info**
 
-MVI is a lert lightweight design pattern overall, not really mandaing much in terms of classes, naming conventions, etc. 
+MVI is a lightweight design pattern overall, not really mandating much in terms of classes, naming conventions, etc. 
 But being so lightweight can make it difficult to get started if you're not comfortable with the MVI model, so it can be
 helpful to have a library be opinionated about how it should be used, so you can more easily copy-and-paste code 
 snippets to make it easier to try out on your own.
@@ -221,7 +221,7 @@ ViewModel's valid lifetime into the platform's Lifecycle.
 **Info**
 
 One can naively understand the MVI model as a way to automatically apply data to the UI. In reality this description
-is more accurate to the MVVM model, but regardless, some libraries offer specificly-tailed integrations into the UI
+is more accurate to the MVVM model, but regardless, some libraries offer specifically-tailored integrations into the UI
 to reduce boilerplate and blur the line between MVVM and MVI.
 {% endalert %}
 

@@ -44,7 +44,7 @@ public interface InputStrategy<Inputs : Any, Events : Any, State : Any> {
     ): ChannelResult<Unit>
 
     /**
-     * Immediately mark the InputStrategy as closed. Aftr this function returns, no more Inputs may be sent to the VM,
+     * Immediately mark the InputStrategy as closed. After this function returns, no more Inputs may be sent to the VM,
      * though anything currently in the queue may still be processed.
      */
     public fun close()

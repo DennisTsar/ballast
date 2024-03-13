@@ -172,7 +172,7 @@ public sealed class BallastNotification<Inputs : Any, Events : Any, State : Any>
     }
 
     /**
-     * A normal exception was thrown during disptching of an Event. Events should typically handle errors in other ways,
+     * A normal exception was thrown during dispatching of an Event. Events should typically handle errors in other ways,
      * but it is not considered a fatal issue that should terminate the app, since it was able to be caught by the
      * ViewModel.
      */

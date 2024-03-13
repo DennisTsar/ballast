@@ -38,7 +38,7 @@ public sealed class Cached<T> {
     }
 
     /**
-     * Indicates that the remote "fetcher" has sucessfully returned data and that the Repository successfully performed
+     * Indicates that the remote "fetcher" has successfully returned data and that the Repository successfully performed
      * any follow-up computation on that data.
      */
     public class Value<T>(public val value: T) : Cached<T>() {

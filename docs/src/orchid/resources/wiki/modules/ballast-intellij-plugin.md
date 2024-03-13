@@ -47,19 +47,19 @@ few seconds, so you can see whether the connection is still alive, even if nothi
 Once connected, the connection will be assigned a UUID and added to the "Connections" dropdown, with the most recent 
 connections at the top of the list. You can click the button to the left of the connection dropdown to clear all data 
 from the debugger. You should typically have 1 connection per app launch, but multiple devices may be connected to the
-same debugger simultanously.
+same debugger simultaneously.
 
 After selecting a connection, you can then select a ViewModel from the adjacent dropdown to browse the data in that
 ViewModel.
 
 When a ViewModel is selected, a series of tabs will be displayed in the UI, for browsing the different types of data 
-reported by the debugger client. The tab icons will be hightlighted if that type of data has anything processing. For 
+reported by the debugger client. The tab icons will be highlighted if that type of data has anything processing. For 
 example, You can also choose via the plugin settings to always show the Current State, or if you're using 
 [Ballast Navigation][6] to always show the current Route. 
 
 You can select the tabs to show a list of data reported for that type, ordered by time. Some tabs (like interceptors) 
 are only available for clients running a specific version of Ballast, since the necessary data for that tab is only 
-supplied by clients using specifc versions of the Ballast Debugger Client.
+supplied by clients using specific versions of the Ballast Debugger Client.
 
 By default, the data displayed when focusing a State, Input, or Event is the `.toString()` representation of the object.
 You may customize the text display of these objects by overriding their `.toString()` values, or by providing an 

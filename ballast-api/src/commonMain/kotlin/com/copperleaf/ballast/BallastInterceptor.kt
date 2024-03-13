@@ -14,7 +14,7 @@ public interface BallastInterceptor<Inputs : Any, Events : Any, State : Any> {
 
     /**
      * This is the main entry-point to Interceptor processing, and is the only callback directly called by the Ballast
-     * framework. This callback should be overriden for more complex Interceptors that need to launch their own
+     * framework. This callback should be overridden for more complex Interceptors that need to launch their own
      * coroutines, or that need to communicate back with the ViewModel by sending [Queued] objects back to the VM's
      * main queue.
      *

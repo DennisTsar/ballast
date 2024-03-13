@@ -60,7 +60,7 @@ Repository InputHandler are sent to the EventBus instead (which is simply a Shar
 `FifoInputStrategy` to ensure that all Inputs are handled, rather than being dropped or cancelled, though they're still
 processed one-at-a-time.
 
-Repositories need a `CoroutineScope` to control their lifetime (commonly a single, glogal Application CoroutineScope), 
+Repositories need a `CoroutineScope` to control their lifetime (commonly a single, global Application CoroutineScope), 
 and the `EventBus` instance, which should be shared among all Repositories. There also exists a 
 `AndroidBallastRepository` which implements the same semantics, but is an instance of `androidx.lifecycle.ViewModel` and
 so can be scoped to a Navigation sub-graph.

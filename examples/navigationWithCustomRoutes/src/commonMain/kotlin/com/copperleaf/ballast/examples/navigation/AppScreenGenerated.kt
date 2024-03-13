@@ -41,7 +41,7 @@ import com.copperleaf.ballast.examples.navigation.Route as ExampleRoute
  * in the class's primary constructor are used to validate the path params, and also append the query string to the full
  * URL.
  *
- * RouteAnnotations can be created using [With], providing a RouteAnnotation class and the paramters to construct an
+ * RouteAnnotations can be created using [With], providing a RouteAnnotation class and the parameters to construct an
  * instance of that class.
  */
 enum class AppScreenRoute(
@@ -96,7 +96,7 @@ val Home.route: AppScreenRoute
 /**
  * For each class annotated with `@Route`, and extension function on its companion object (or itself if it is an
  * `object`) builds the generated URL for its corresponding generated route. If there are any path or URL params in
- * the route, those will be added as paramters to this function.
+ * the route, those will be added as parameters to this function.
  */
 fun Home.navigate(): String {
     return route

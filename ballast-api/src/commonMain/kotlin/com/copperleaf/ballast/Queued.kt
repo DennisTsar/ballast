@@ -5,7 +5,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlin.time.Duration
 
 /**
- * Represents an item in the ViewModel's main processing queue. Queued items will always be processed predicably
+ * Represents an item in the ViewModel's main processing queue. Queued items will always be processed predictably
  * according to the rules of the [InputStrategy] provided to the [BallastViewModelConfiguration]
  * ([BallastViewModelConfiguration.inputStrategy]).
  */

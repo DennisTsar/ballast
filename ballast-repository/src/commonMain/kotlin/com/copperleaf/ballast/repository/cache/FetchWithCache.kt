@@ -31,7 +31,7 @@ public suspend fun <Inputs : Any, Events : Any, State : Any, Property> InputHand
     if (!matchesPrerequisites(currentState)) return
 
     // VM is already fetching when another request came in. If the second request is a forced refresh, cancel the first
-    // by restarting the side-job. If the second reqeust is not a forced refresh, return and allow the original to
+    // by restarting the side-job. If the second request is not a forced refresh, return and allow the original to
     // continue executing.
     if (getValue(currentState) is Cached.Fetching && !forceRefresh) return
 

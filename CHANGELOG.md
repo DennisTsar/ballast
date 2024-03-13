@@ -206,7 +206,7 @@
 ## 0.8.0 - 2022-02-22
 
 This is a major release, with lots of new features, greatly improved safety, but with several significant breaking
-changes, as descibed below:
+changes, as described below:
 
 - Improves side-effects
   - They are now started through a Channel, instead of relying on a Mutex for safety

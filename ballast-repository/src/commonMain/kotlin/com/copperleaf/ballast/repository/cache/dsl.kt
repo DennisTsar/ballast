@@ -58,7 +58,7 @@ public fun <T> Cached<List<T>>.getValueOrEmptyList(): List<T> {
 /**
  * Get the value if the remote data source returned valid data. If the cache is currently refreshing, this will return
  * the previous cached value so the UI can continue displaying it while it adds a progress indicator over it. If there
- * was no previosuly cached value to be displayed, return the result of [defaultValue].
+ * was no previously cached value to be displayed, return the result of [defaultValue].
  */
 public fun <T> Cached<T>.getCachedOrElse(defaultValue: () -> T): T {
     return when (this) {
@@ -72,7 +72,7 @@ public fun <T> Cached<T>.getCachedOrElse(defaultValue: () -> T): T {
 /**
  * Get the value if the remote data source returned valid data. If the cache is currently refreshing, this will return
  * the previous cached value so the UI can continue displaying it while it adds a progress indicator over it. If there
- * was no previosuly cached value to be displayed, return null.
+ * was no previously cached value to be displayed, return null.
  */
 public fun <T> Cached<T>.getCachedOrNull(): T? {
     return when (this) {
@@ -86,7 +86,7 @@ public fun <T> Cached<T>.getCachedOrNull(): T? {
 /**
  * Get the value if the remote data source returned valid data. If the cache is currently refreshing, this will return
  * the previous cached value so the UI can continue displaying it while it adds a progress indicator over it. If there
- * was no previosuly cached value to be displayed, throw an exception.
+ * was no previously cached value to be displayed, throw an exception.
  */
 public fun <T> Cached<T>.getCachedOrThrow(): T {
     return when (this) {
@@ -108,7 +108,7 @@ public fun <T> Cached<T>.getCachedOrThrow(): T {
 /**
  * Get the value if the remote data source returned valid data. If the cache is currently refreshing, this will return
  * the previous cached value so the UI can continue displaying it while it adds a progress indicator over it. If there
- * was no previosuly cached value to be displayed, return the result of [defaultValue].
+ * was no previously cached value to be displayed, return the result of [defaultValue].
  */
 public fun <T> Cached<List<T>>.getCachedOrEmptyList(): List<T> {
     return when (this) {

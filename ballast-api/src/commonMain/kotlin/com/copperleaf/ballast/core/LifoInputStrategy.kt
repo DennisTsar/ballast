@@ -21,8 +21,8 @@ import kotlinx.coroutines.flow.collectLatest
  * conditions. Each Input processed with a LIFO strategy can freely access/update the ViewModel state as many times as
  * it needs.
  *
- * Since we know only 1 Input is being procced at a time, if an input gets cancelled partway through its processing, the
- * ViewModel state will roll back to prevent the ViewModel from being left in a bad state.
+ * Since we know only 1 Input is being processed at a time, if an input gets cancelled partway through its processing,
+ * the ViewModel state will roll back to prevent the ViewModel from being left in a bad state.
  */
 public class LifoInputStrategy<Inputs : Any, Events : Any, State : Any> private constructor(
     filter: InputFilter<Inputs, Events, State>?

@@ -305,7 +305,7 @@ A tailcard (`{...}`) matches all the rest of the URL path, can include several p
 example, `/user/{...}` matches `/user/john/settings` as well as `/user`.
 
 If a Destination includes a names tailcard, its value can be accessed like
-`destination.pathParamters["param"]`.
+`destination.pathParameters["param"]`.
 
 #### Path Parameter
 
@@ -321,7 +321,7 @@ Note that optional path parameters {param?} can only be used at the end of the p
 cannot be used with a tailcard, you must choose one or the other.
 
 If a Destination includes a path parameter, its value can be accessed like
-`destination.pathParamters["param"]`, or by using the delegate functions like
+`destination.pathParameters["param"]`, or by using the delegate functions like
 `val param: String by destination.stringPath()`, `val param: Int? by destination.optionalIntPath()`, etc.
 
 ### Query Parameter Format
@@ -360,7 +360,7 @@ many values are allowed at that key:
 ` /route?one={[?]}`: allow 0 or more values
 
 If a Destination includes query parameters, they ma be accessed like
-`destination.queryParamters["param"]`, or by using the delegate functions like
+`destination.queryParameters["param"]`, or by using the delegate functions like
 `val param: String by destination.stringQuery()`, `val param: Int? by destination.optionalIntQuery()`, etc.
 
 #### Remaining Query
@@ -370,7 +370,7 @@ parameters, where anything that was not matched from previous query parameters w
 query parameters may be empty.
 
 If a Destination includes query parameters, they may be accessed like
-`destination.queryParamters["param"]`, or by using the delegate functions like
+`destination.queryParameters["param"]`, or by using the delegate functions like
 `val param: String by destination.stringQuery()`, `val param: Int? by destination.optionalIntQuery()`, etc.
 
 ### Route Weights

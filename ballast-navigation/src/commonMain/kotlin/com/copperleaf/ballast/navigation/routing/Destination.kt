@@ -5,7 +5,7 @@ package com.copperleaf.ballast.navigation.routing
  * matched against the registered routes to attempt to find a route that is able to properly parse the destination URL '
  * into parameters.
  *
- * Routes are weighted, and then compared by weight against the dstination URL. The first route that is able to process
+ * Routes are weighted, and then compared by weight against the destination URL. The first route that is able to process
  * the route will be selected as the match, there is no guarantee that it will be the only matching route. If multiple
  * routes have the same weight, it is undefined which one will be selected. In this case, you may consider providing a
  * hardcoded weight to those routes to ensure one is selected over the other.

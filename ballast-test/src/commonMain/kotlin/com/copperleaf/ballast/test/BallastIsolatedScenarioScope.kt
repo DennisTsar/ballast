@@ -37,7 +37,7 @@ public interface BallastIsolatedScenarioScope<Inputs : Any, Events : Any, State 
     public fun given(block: () -> State)
 
     /**
-     * Once the scneario test script in [BallastIsolatedScenarioScope.running] has completed, inspect and make assertions
+     * Once the scenario test script in [BallastIsolatedScenarioScope.running] has completed, inspect and make assertions
      * on what actually happened during the test, and what it produced as a result. The properties in [TestResults]
      * correspond directly to the callbacks of [BallastInterceptor], and the relative ordering of properties in each
      * list is maintained with respect to the order the inputs were delivered to the test.

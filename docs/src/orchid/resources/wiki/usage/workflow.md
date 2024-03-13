@@ -55,7 +55,7 @@ object LoginScreenContract {
 
 After defining the contract, you should then write the InputHandler to process the Inputs as they are received. The
 InputHandler is the class that will be talking to your Repository layer, so any necessary Repositories should be 
-provided through the InputHandler's contructor 
+provided through the InputHandler's constructor. 
 
 If you're using Ballast in a multiplatform project, the InputHandler should be in the `commonMain` sourceSet.
 

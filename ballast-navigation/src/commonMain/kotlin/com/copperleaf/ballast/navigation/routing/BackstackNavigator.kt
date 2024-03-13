@@ -24,7 +24,7 @@ public interface BackstackNavigator<T : Route> {
     public fun updateBackstack(block: (Backstack<T>) -> Backstack<T>)
 
     /**
-     * Parse [destinationUrl] and amtch it against the routes registered in the [RoutingTable]. This will return either
+     * Parse [destinationUrl] and match it against the routes registered in the [RoutingTable]. This will return either
      * [Destination.Match] if a matching route is capable of handling this URL, or else [Destination.Mismatch] if not.
      * Either way, the resulting entry can be placed in the backstack with [updateBackstack].
      */

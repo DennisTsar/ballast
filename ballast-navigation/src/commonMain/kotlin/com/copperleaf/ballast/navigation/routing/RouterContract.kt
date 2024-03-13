@@ -90,7 +90,7 @@ public object RouterContract {
          * will also be popped off, thus ending at the destination immediately before it. If [inclusive] is false, the
          * route matching [route] will become the new "current" destination.
          *
-         * If no destinations in the backstack are at the given [route], the entire backstack will be popeed until it is
+         * If no destinations in the backstack are at the given [route], the entire backstack will be popped until it is
          * empty.
          */
         public class PopUntilRoute<T : Route>(
@@ -111,7 +111,7 @@ public object RouterContract {
          * true, that destination will also be popped off, thus ending at the destination immediately before it. If
          * [inclusive] is false, the route which has the [annotation] will become the new "current" destination.
          *
-         * If no destinations in the backstack have the given [annotation], the entire backstack will be popeed until it
+         * If no destinations in the backstack have the given [annotation], the entire backstack will be popped until it
          * is empty.
          */
         public class PopUntilAnnotation<T : Route>(

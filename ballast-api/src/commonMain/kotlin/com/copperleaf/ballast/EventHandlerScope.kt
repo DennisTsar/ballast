@@ -1,7 +1,7 @@
 package com.copperleaf.ballast
 
 /**
- * The actions availble when handling an Event.
+ * The actions available when handling an Event.
  */
 @BallastDsl
 public interface EventHandlerScope<Inputs : Any, Events : Any, State : Any> {

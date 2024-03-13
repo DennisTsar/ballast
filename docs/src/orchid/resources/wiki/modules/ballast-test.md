@@ -5,7 +5,7 @@
 
 ## Overview
 
-Ballast Test gives you a DSL you can include in any Kotlin testing framework to setup sequences of inputs and assert the
+Ballast Test gives you a DSL you can include in any Kotlin testing framework to set up sequences of inputs and assert the
 results of their processing.
 
 ## Usage

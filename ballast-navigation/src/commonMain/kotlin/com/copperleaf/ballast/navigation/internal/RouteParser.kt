@@ -61,7 +61,7 @@ internal object RouteParser {
         // specific than the path
         val pathPowerModifier = queryParameters.size + 1
 
-        // path has a greater weight than the query, so raise its power by the number of query paramers to ensure it
+        // path has a greater weight than the query, so raise its power by the number of query parameters to ensure it
         // always matches paths before query parameters
         val pathWeight = pathSegments.reversed().foldRightIndexed(0.0) { index, next, acc ->
             acc + (next.weight * (10.0.pow(index + pathPowerModifier)))

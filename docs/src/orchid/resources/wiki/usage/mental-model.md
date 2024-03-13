@@ -188,7 +188,7 @@ class CounterActivity : AppCompatActivity(), CounterView {
 }
 ```
 
-This approach gained a lot of popularity because it allowed one to test the busisness logic in a normal unit test,
+This approach gained a lot of popularity because it allowed one to test the business logic in a normal unit test,
 without needing a full real or emulated environment. But this approach has a number of flaws, some of which are inherent
 in its design, and some are just problems with the real-world implementation of it.
 
@@ -591,7 +591,7 @@ an MVI approach like Ballast to protect updates to the state, you can enforce th
 in how your make updates to it.
 
 Furthermore, this style is actually not completely divorced from sealed classes! You can use the `data class` as the
-main state holder, and still define individual mutually-exlusive properties within that state as `sealed classes`, to
+main state holder, and still define individual mutually-exclusive properties within that state as `sealed classes`, to
 get the same kind of benefit! These intermediary classes can be modeled with the built-in `Result` type, or you can
 write your own wrapper for a more domain-specific result. For example:
 
@@ -679,7 +679,7 @@ properties in an invalid way.
 In addition, there's not really any consistency between these values when we set them. If the code making the updates
 happens to be a bit slow, the `combine` function may collect a pair of values that are invalid, without us actually
 intending to create an invalid UI state. The state just happened to be invalid as it transitioned. Having to update the
-flows independently means there's no kind of "transation" that could be applied to ensure there's no ephemeral invalid
+flows independently means there's no kind of "transaction" that could be applied to ensure there's no ephemeral invalid
 states. But with a `data class`, a single `.update { it.copy() }` can freely change multiple properties at once without
 causing there to be any invalid intermediate states.
 
@@ -790,7 +790,7 @@ ease the readability and maintainability for your developers, which are describe
 How Inputs are handled within Ballast depends a bit on your specific needs, and will impact how Ballast requires you
 to write your code so that it is always handled safely. Ballast has several ways to configure how Inputs are processed,
 called `InputStrategies`, and understanding how and why to pick one over the other can help you build UIs that users
-love, while also avoiding some sutble issues in your implementation.
+love, while also avoiding some stable issues in your implementation.
 
 At a high level, when working with Ballast and deciding how to process inputs, you should have the following things
 in mind:
@@ -895,7 +895,7 @@ Clearly, this is not a great use case for LIFO, but let's consider some other si
 sense.
 
 - You have an app that makes a long API call on the dashboard to load its data. But the user may not actually want to
-  view the data on the dashboard, and instead intended to make a change in their acount settings. By using LIFO, you can
+  view the data on the dashboard, and instead intended to make a change in their account settings. By using LIFO, you can
   allow the user to click the "Settings" button and be taken there immediately, without being forced to wait for the
   dashboard to finish loading before they can navigate.
 - You have an ecommerce app, with the main store listing able to be searched by text, and filtered/sorted by price. The
@@ -923,7 +923,7 @@ only way it could get cancelled is if the user intends for it to be cancelled, s
 where we do not need those resources.
 
 But real-world applications aren't always that simple. One use-case is observing a stream of events (a Kotlin `Flow`) of
-some data source, rather than a discrete suspending value. For example, rather than the respository directly delivering
+some data source, rather than a discrete suspending value. For example, rather than the repository directly delivering
 the results of an API call, it may cache it, and send multiple emissions to notify of the cache status (see
 [Ballast Repository][9] module). Or you connect to the phone's GPS and receive an endless stream of GPS
 coordinates you need to display on a map. We need a new strategy to handle this kind of use-case: a "side-job".

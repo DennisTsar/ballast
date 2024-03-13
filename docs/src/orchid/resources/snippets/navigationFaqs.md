@@ -93,7 +93,7 @@ routing and the [History API][10] are supported.
 #### Browser Hash
 
 Hash-based routing is the "older" mechanism for routing in a Single Page Application (SPA), though it should not be
-considered obselete. In particular, one would have to set up server-side redirects to make the History API work, which
+considered obsolete. In particular, one would have to set up server-side redirects to make the History API work, which
 may not be feasible, in which case Hash-based routing is the only option left.
 
 Hash-based routing can be added with the `BrowserHashNavigationInterceptor`, or with the `withBrowserHashRouter` helper
@@ -116,7 +116,7 @@ class RouterViewModel(
 Hash-based routing is done with the `#` portion of the URL, and isn't as user-friendly to read and share as with just
 a normal URL path. The [Browser History API][10] allows websites to edit the entire URL shown in the address bar
 and navigate forward and backward through the screens of your SPA with the browser's native buttons, so users wouldn't
-even know that you'ure doing front-end routing.
+even know that you're doing front-end routing.
 
 The caveat is that using the history API requires your hosting server to redirect all URLs to the SPA's main page. There
 are plenty of tutorials online for configuring your server to do this, so I will not cover these details here.
@@ -164,4 +164,3 @@ and avoid bloat in its API.
 [10]: https://developer.mozilla.org/en-US/docs/Web/API/History_API
 [11]: https://github.com/gmazzo/gradle-buildconfig-plugin
 [12]: https://github.com/hfhbd/routing-compose#development-usage
-

@@ -80,7 +80,7 @@ also be placed in `.onAppear()`.
 Just like with Jetpack Compose, you should have a separate `*Content` View that has no direct knowledge of the Ballast
 ViewModel. You'll pass in the observable's `vmState` and a callback function for `postInput` from the screen that 
 contains the ViewModel and manages its lifecycle. The `*Content` View, then, only needs to be responsible for displaying
-its content from the non-null `vmState` value, and passing Inputs through `postInput` to be processed by the Ballst 
+its content from the non-null `vmState` value, and passing Inputs through `postInput` to be processed by the Ballast 
 ViewModel. Note that Kotlin's Swift name translation will convert the nested class names like 
 `ExampleContract.Inputs.Initialize` to drop the second `.` (looking like `ExampleContract.InputsInitialize` when created
 in Swift), and will also require you to provide labels for the parameters for all Inputs.

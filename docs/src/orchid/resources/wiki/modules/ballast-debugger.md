@@ -116,7 +116,7 @@ Then, in your `AndroidManifest.xml` add the following line to your `application`
 Since version 4.0.0, the Debugger allows you to send JSON (or other serialized content) from the graphical UI back to 
 the connected ViewModel, where the content is deserialized and processed as if it were send from the application itself.
 This allows you to directly manipulate the state or take UI actions without needing to hardcode it or recompile your 
-application. The current UI for this feature is faily basic, but it will be improved in future releases without needing
+application. The current UI for this feature is fairly basic, but it will be improved in future releases without needing
 any additional configuration in the client application.
 
 Because Kotlin is a strongly-typed language, you must opt-in to this feature by enabling your State and Input classes to
@@ -227,7 +227,7 @@ another library (like Moshi or Jackson), the setup process will look mostly the 
 `kotlinx.serialization`, except you'll need to provide your own `DebuggerAdapter` to handle the serialization needs. 
 
 For example, here's what an adapter might look like when using Moshi (de)serialization. Other non-JSON formats would be
-configured in exactly the same way, using the appropriate libraries and serialization logic for those other fo4rmats. 
+configured in exactly the same way, using the appropriate libraries and serialization logic for those other formats. 
 This Moshi adapter requires the following Moshi dependencies:
 
 ```kotlin

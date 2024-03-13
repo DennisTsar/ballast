@@ -125,7 +125,7 @@ public class DefaultSyncConnection<Inputs : Any, Events : Any, State : Any>(
         /**
          * Replicas receive the State from the Source, and can also send Inputs back to the Source. If a replica ViewModel
          * processes an Input, it should not truly be considered handled until it has been sent to the Source and processed
-         * by the Source. As a result, the Source VM will then be synchronzied back to the VM that sent the Input.
+         * by the Source. As a result, the Source VM will then be synchronized back to the VM that sent the Input.
          */
         Replica,
 
