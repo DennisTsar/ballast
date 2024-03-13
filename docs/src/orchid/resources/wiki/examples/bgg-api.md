@@ -15,7 +15,7 @@ How to use:
 - Select a "HotList Type" from the dropdown menu
 - Hit "Fetch HotList" to request the API response from the Repository, which will determine whether to actually hit the 
   API or just return the cached value.
-- You can force the API to called again by having "Force Refresh" checked when you hit "Fetch HotList". Alternatively, 
+- You can force the API to be called again by having "Force Refresh" checked when you hit "Fetch HotList". Alternatively, 
   if you fetched data from one hotlist type (say Board Games), then change to another type (like Video Games), then the
   list will also be refreshed, even if "Force Refresh" is not checked.
 

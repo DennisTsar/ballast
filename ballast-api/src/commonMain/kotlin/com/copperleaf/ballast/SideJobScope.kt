@@ -39,7 +39,7 @@ public interface SideJobScope<Inputs : Any, Events : Any, State : Any> : Corouti
      * Inputs sent back to the ViewModel should not contain any data that can be derived from the ViewModel. That is,
      * data from the current State at the time this side-job finishes may not be the same as the State of the
      * ViewModel at that point in time, since this side-job is running in parallel to the normal state updates. So
-     * any Input sent back to the VM cannot assume any of the values in it's own "current state" are still valid, so we
+     * any Input sent back to the VM cannot assume any of the values in its own "current state" are still valid, so we
      * definitely don't want to put any of those values back. Instead, let the Input pull the necessary values once it
      * is handled, instead of being cached in the Input class itself.
      *

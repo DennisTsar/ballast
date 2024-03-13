@@ -59,7 +59,7 @@ inputs you do want tracked to remove any sensitive info from them.
 {% alert 'warning' :: compileAs('md') %}
 **Warning**
 
-Add `@FirebaseCrashlyticsIgnore` to Inputs you do not want to sent to Firebase, to protect sensitive information.
+Add `@FirebaseCrashlyticsIgnore` to Inputs you do not want to send to Firebase, to protect sensitive information.
 {% endalert %}
 
 In addition to logs, the `FirebaseCrashlyticsInterceptor` will also record any exceptions that are thrown but do not 

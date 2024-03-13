@@ -2,7 +2,7 @@ package com.copperleaf.ballast.navigation.routing
 
 /**
  * Represents an entry in the router's backstack. A destination is parsed from the URL sent to the router, and then
- * matched against the registered routes to attempt to find a route that is able to properly parse the destination URL '
+ * matched against the registered routes to attempt to find a route that is able to properly parse the destination URL
  * into parameters.
  *
  * Routes are weighted, and then compared by weight against the destination URL. The first route that is able to process

@@ -120,7 +120,7 @@ But if that is true, why is it coupled to the Ballast library?
 
 The main reason is that Routing needs some kind of state management solution in order to work properly. Things could end
 up very poorly if your app attempts to make multiple navigation attempts quickly and the Router state gets corrupted, 
-and you users will be very unhappy with their experience using that app. The Router state needs to be protected from
+and your users will be very unhappy with their experience using that app. The Router state needs to be protected from
 unwanted changes and ensure things are being processed safely, so the options for building the routing library then
 become:
 

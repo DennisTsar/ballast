@@ -329,7 +329,7 @@ public inline fun <Inputs : Any, Events : Any, State : Any> Flow<BallastNotifica
 /**
  * Return a `Flow` of the States updated by the VIewModel
  *
- * The flow of Events can be buffered with [bufferState], which can be used to debounce, sample, etc. This buffering
+ * The flow of Events can be buffered with [bufferStates], which can be used to debounce, sample, etc. This buffering
  * should generally be controlled by the end-user, so it should be passed into the Interceptor and forwarded to this
  * function.
  */

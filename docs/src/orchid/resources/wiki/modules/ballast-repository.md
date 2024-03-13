@@ -176,7 +176,7 @@ class ExampleRepositoryInputHandler(
 
 The final piece of the puzzle is where things start to look a bit different from normal UI MVI usage. A Ballast 
 Repository typically shouldn't be directly exposed to the UI, but instead hidden behind an interface so the UI layers 
-don't need to worry about sending the right Inputs and the right time to clear the caches, etc. Instead the UI just 
+don't need to worry about sending the right Inputs and the right time to clear the caches, etc. Instead, the UI just 
 requests data from the Repository interface as normal and receives the data it needs as a flow, while the Ballast 
 Repository does all the work in the background to fetch or return cached data.
 

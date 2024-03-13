@@ -29,7 +29,7 @@ indicate the status of the build and automatically reload when ready.
 
 ## Exporting the Project
 
-When you are ready to ship, you should shutdown the development server and then export the project using:
+When you are ready to ship, you should shut down the development server and then export the project using:
 
 ```bash
 kobweb export

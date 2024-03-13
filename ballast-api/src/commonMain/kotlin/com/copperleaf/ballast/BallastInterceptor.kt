@@ -51,7 +51,7 @@ public interface BallastInterceptor<Inputs : Any, Events : Any, State : Any> {
     public val key: Key<BallastInterceptor<*, *, *>>? get() = null
 
     /**
-     * A key for accessing this Interceptor directly from a SideJob. Interceptors do not need to define a Key, but it it
+     * A key for accessing this Interceptor directly from a SideJob. Interceptors do not need to define a Key, but if it
      * does, the Key must be unique among all Interceptors registered to a ViewModel.
      *
      * An Interceptor's Key should conventionally be defined as an `object` on the Interceptor class names `Key`, as

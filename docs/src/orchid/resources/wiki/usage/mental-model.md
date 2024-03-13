@@ -5,7 +5,7 @@
 
 The [Feature Overview][14] highlights the main features and APIs of the Ballast library, and is a good place to start 
 for understanding the use-case of this library. This page digs deeper into some of those concepts to more fully explore 
-the motivation behind this library and the reasoning behind it's opinionated structures, and the mechanics of some of
+the motivation behind this library and the reasoning behind its opinionated structures, and the mechanics of some of
 its more advanced features.
 
 ## Ballast Overview
@@ -717,7 +717,7 @@ Each Contract is a top-level `object` with a nested `State` `data class`, and `s
 update itself to display what's in that `State`, and in doing so will always be kept consistent with that State.
 
 `Inputs` are how the UI communicates back to the ViewModel. Each discrete action in the UI, each click listener, text
-changed listener, etc. should be separate classes within the `Input` sealed class. Each `Inputs` subclass is should be
+changed listener, etc. should be separate classes within the `Input` sealed class. Each `Inputs` subclass should be
 an `object` if the UI element doesn't directly deliver data to the ViewModel (a click listener), or a `data class` if
 it does need to deliver data (text changed). Don't worry about what to do with those yet, the Contract just defines the
 "what".

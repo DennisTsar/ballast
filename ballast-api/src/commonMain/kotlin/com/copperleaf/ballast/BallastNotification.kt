@@ -289,7 +289,7 @@ public sealed class BallastNotification<Inputs : Any, Events : Any, State : Any>
     }
 
     /**
-     * A exception was thrown inside a sideJob
+     * An exception was thrown inside a sideJob
      */
     public class SideJobError<Inputs : Any, Events : Any, State : Any>(
         viewModelType: String,

@@ -28,7 +28,7 @@ import kotlinx.coroutines.flow.SharedFlow
  * a "side-job" and posting inputs back to the Repository to update the state as it changes from the application
  * background.
  *
- * Also unlike a Ballast ViewModel, a Ballast Repository doesn't have it's own [EventHandler], but rather uses its
+ * Also unlike a Ballast ViewModel, a Ballast Repository doesn't have its own [EventHandler], but rather uses its
  * EventHandler to communicate with other Repositories through an [EventBus]. A Repository can dispatch any object
  * through its [InputHandlerScope.postEvent], which will get delivered to any other Repositories listening for that
  * Input. This is commonly used to directly send Inputs to other Repositories, but you may wish to use common "tokens"

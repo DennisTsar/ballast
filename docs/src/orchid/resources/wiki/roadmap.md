@@ -15,7 +15,7 @@ I will happily link to that repo from the Ballast documentation.
 - [Finite State Machine DSL][#7]: Ballast is basically an FSM already, and it would be nice to build a dedicated DSL
   like [Tinder/StateMachine][a] on top of Ballast so it could be used on any Kotlin target
 - [Refactor Repository module][#31]: The Repository Module has some good ideas about how to use the MVI for managing the 
-  repository an other layers of your application, extending the MVI pattern beyond just the UI. But the current 
+  repository and other layers of your application, extending the MVI pattern beyond just the UI. But the current 
   implementation needs to be refined and streamlined.
 - Pluggable Event-handling strategies (at most once, at least once, exactly once, atomic, etc.)
 
